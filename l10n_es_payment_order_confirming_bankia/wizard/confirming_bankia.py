@@ -166,8 +166,6 @@ class ConfirmingBankia(object):
                 if len(num_factura) < 10:
                     relleno = 10 - len(num_factura)
                     num_factura += relleno * ' '
-            else:
-                num_factura
         text += num_factura
         # 259 - 266 Fecha Factura
         fecha_factura = '00000000'

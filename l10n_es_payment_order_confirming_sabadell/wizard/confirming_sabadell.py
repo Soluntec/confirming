@@ -160,8 +160,6 @@ class ConfirmingSabadell(object):
                 if len(num_factura) < 15:
                     relleno = 15 - len(num_factura)
                     num_factura += relleno * ' '
-            else:
-                num_factura
         text += num_factura
         # 67 - 81 Importe de la factura
         text += self.converter.convert(abs(line['amount']), 14)
