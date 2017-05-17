@@ -5,7 +5,7 @@
 
 import re
 import datetime
-from openerp import fields, _
+from openerp import _
 from openerp.addons.l10n_es_payment_order.wizard.log import Log
 from openerp.addons.l10n_es_payment_order.wizard.converter import \
     PaymentConverterSpain
