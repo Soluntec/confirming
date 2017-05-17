@@ -302,7 +302,7 @@ class ConfirmingSabadell(object):
         # 192 - 251 Correo
         email_pro = line['partner_id']['email']
         if email_pro:
-            if re.match('^[(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,15}\
+            if re.match(r'^[(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,15}\
                     $', email_pro.lower()):
                 if len(email_pro) < 60:
                     relleno = 60 - len(email_pro)
